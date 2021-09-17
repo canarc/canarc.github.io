@@ -1,0 +1,66 @@
+.myGrid {
+  color: white;
+  width: 100%;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  grid-gap: 2rem;
+  min-height: 0; /* NEW */
+  min-width: 0; /* NEW; needed for Firefox */
+}
+
+.gridCell {
+  padding: 20px;
+  background-color: #e8a87c;
+  border-radius: 10px;
+  min-width: 0; /* NEW; needed for Firefox */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.gridCell > p {
+  font-size: 10px;
+}
+
+.gridImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.gridCell > h3 {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+
+.gridCell > *:nth-child(3) {
+  overflow: hidden;
+  flex: 3;
+}
+
+.gridCell > *:last-child {
+  flex: 1;
+}
+
+button {
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #41b3a3;
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+  cursor: pointer;
+  border: 3px solid #41b3a3;
+  transition: 0.3s;
+  min-width: 200px;
+  min-height: 50px;
+}
+
+button:hover {
+  border: 3px solid white;
+}

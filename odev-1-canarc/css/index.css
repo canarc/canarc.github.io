@@ -1,0 +1,166 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  background-color: rgb(226, 226, 226);
+}
+
+header {
+  display: block;
+  background-color: #41b3a3;
+  margin-bottom: 20px;
+}
+
+.header {
+  margin: auto;
+  max-width: 1380px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header > .logo {
+  flex: 1;
+  height: 60px;
+}
+
+.header > .searchBar {
+  position: relative;
+  padding-left: 50px;
+  background-color: white;
+  flex: 4;
+  height: 60px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.searchBar > input {
+  outline: none;
+  border: none;
+  background: none;
+  width: 80%;
+  height: 60px;
+  padding: 0 10px;
+
+  font-size: 20px;
+  color: #e27d60;
+
+  background: white;
+}
+
+.searchBar.hidden {
+  visibility: hidden;
+}
+
+.fa-search {
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  color: #41b3a3;
+  margin-top: 16px;
+  margin-left: 15px;
+}
+
+.empty {
+  display: none !important;
+}
+
+.header > .profileImage {
+  flex: 1;
+}
+
+.fa-user-circle {
+  color: white;
+  font-size: 45px;
+  float: right;
+}
+
+#container {
+  margin: auto;
+  height: 100%;
+  min-height: 100%;
+  max-width: 1380px;
+  background-color: rgb(226, 226, 226);
+  padding: 0 20px;
+  flex: 1;
+  gap: 30px;
+  display: flex;
+}
+
+.leftContent {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.leftContent > button {
+  margin-bottom: 7px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background-color: #e8a87c;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.leftContent > button:hover {
+  background-color: #e27d60;
+}
+
+.leftContent > button.active {
+  background-color: #e27d60;
+}
+
+.rightContent {
+  flex: 6;
+  height: min-content;
+  padding: 20px;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  gap: 10px;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .leftContentForm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .leftContent {
+    flex: none;
+  }
+}
+
+.myForm {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+form > input {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #41b3a3;
+  border-radius: 5px;
+}

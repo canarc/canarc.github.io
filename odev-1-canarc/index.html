@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiğitcan Arıcı</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script defer src="./index.js"></script>
+
+</head>
+
+<body>
+    <div class="modalContainer empty">
+        <div class="modalContent"></div>
+    </div>
+
+    <header>
+        <div class="header">
+            <img class="logo" src="./images/bee.svg" alt="">
+            <div class="searchBar">
+                <input placeholder="Search is working, try me"><i class="fas fa-search"></i></input>
+            </div>
+            <div class="profileImage">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="container">
+        <div class="leftContent">
+            <button value="form">Form</button>
+            <button class="active" value="grid">Grid</button>
+        </div>
+        <div class="rightContent">
+            <div class="myForm empty">
+
+                <form name="MyForm" id="form">
+                    <label for="fname">First name:</label><br> <br>
+                    <input type="text" id="fname" name="fname" value=""><br> <br>
+                    <label for="lname">Last name:</label><br> <br>
+                    <input type="text" id="lname" name="lname" value=""> <br> <br>
+                    <label for="phone">Phone:</label><br> <br>
+                    <input type="text" id="phone" name="phone" value=""> <br> <br>
+                    <label for="address">Address:</label><br> <br>
+                    <input type="text" id="address" name="address" value=""> <br>
+
+                    <p>Please select your favorite Web language:</p>
+                    <div>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label><br>
+                    </div>
+
+
+                    <br>
+
+                    <p>Please select your age:</p>
+                    <div>
+                        <input type="radio" id="age1" name="age" value="30">
+                        <label for="age1">0 - 30</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="age2" name="age" value="60">
+                        <label for="age2">31 - 60</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="age3" name="age" value="100">
+                        <label for="age3">61 - 100</label><br><br>
+                    </div>
+                    <button id="submitButton" type="submit">Submit</button>
+                </form>
+
+            </div>
+            <div class="myGrid" />
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
