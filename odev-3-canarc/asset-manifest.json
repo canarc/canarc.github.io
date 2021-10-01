@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/odev-3-canarc/static/css/main.cca811b8.chunk.css",
-    "main.js": "/odev-3-canarc/static/js/main.ab798e8b.chunk.js",
-    "main.js.map": "/odev-3-canarc/static/js/main.ab798e8b.chunk.js.map",
+    "main.js": "/odev-3-canarc/static/js/main.4a1f3ea5.chunk.js",
+    "main.js.map": "/odev-3-canarc/static/js/main.4a1f3ea5.chunk.js.map",
     "runtime-main.js": "/odev-3-canarc/static/js/runtime-main.9d5cd934.js",
     "runtime-main.js.map": "/odev-3-canarc/static/js/runtime-main.9d5cd934.js.map",
     "static/js/2.faa1a6b1.chunk.js": "/odev-3-canarc/static/js/2.faa1a6b1.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.9d5cd934.js",
     "static/js/2.faa1a6b1.chunk.js",
     "static/css/main.cca811b8.chunk.css",
-    "static/js/main.ab798e8b.chunk.js"
+    "static/js/main.4a1f3ea5.chunk.js"
   ]
 }
